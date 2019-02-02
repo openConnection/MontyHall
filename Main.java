@@ -20,7 +20,7 @@ public class Main {
 			
 			Integer porte_gagnante = tableauPorte.get(rand.nextInt(tableauPorte.size())); //On nomme une porte gagnante au hasard
 			Integer porte_vue = tableauPorte.get(rand.nextInt(tableauPorte.size())); //On nomme la porte qu'on va montrer au hasard
-			Integer porte_choisie = tableauPorte.get(rand.nextInt(tableauPorte.size())); //On nomme la poret qu'on choisie au hasard
+			Integer porte_choisie = tableauPorte.get(rand.nextInt(tableauPorte.size())); //On nomme la porte qu'on choisie au hasard
 			
 			do {
 				porte_vue = tableauPorte.get(rand.nextInt(tableauPorte.size())); //Exécution de la condition
