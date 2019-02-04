@@ -5,7 +5,7 @@ public class Main {
 	
 	//Variables stockées
 	public static ArrayList<Integer> tableauPorte = new ArrayList<>(); //Tableau contenant les portes
-	public static Integer victoire; //Nombre représentant les victoires lorsque qu'on change de porte
+	public static Integer victoire = 0; //Nombre représentant les victoires lorsque qu'on change de porte
 
 	public static void main(String[] args) {
 		
@@ -24,7 +24,7 @@ public class Main {
 			
 			do {
 				porte_vue = tableauPorte.get(rand.nextInt(tableauPorte.size())); //Exécution de la condition
-            } while ((porte_vue == porte_choisie) || (porte_vue == porte_gagnante)); //Si la porte montrée ou gagnante est la même que celle choisie, on la renomme au hasard
+            		} while ((porte_vue == porte_choisie) || (porte_vue == porte_gagnante)); //Si la porte montrée ou gagnante est la même que celle choisie, on la renomme au hasard
 			
 			Integer choix_2 = ((porte_vue + porte_choisie) != 4) ? (porte_vue + porte_choisie) %4 : (porte_vue + porte_choisie)/2;
 			// ? est une condition, ici en deuxième choix, on choisi la porte qui n'a pas été choisie
